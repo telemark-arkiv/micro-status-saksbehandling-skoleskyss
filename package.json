@@ -1,7 +1,7 @@
 {
   "name": "micro-status-saksbehandling-skoleskyss",
   "description": "Shows status for saksbehandling skoleskyss",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "private": true,
   "author": {
