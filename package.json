@@ -1,7 +1,7 @@
 {
   "name": "micro-status-saksbehandling-skoleskyss",
   "description": "Shows status for saksbehandling skoleskyss",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "private": true,
   "author": {
@@ -20,7 +20,7 @@
     "coveralls": "tap --cov --coverage-report=lcov test/**/*.js && cat coverage/lcov.info | coveralls",
     "setup": "npm install",
     "standard-fix": "standard --fix",
-    "start": "NODE_ENV=production micro -p 8080",
+    "start": "micro -p 8080",
     "dev": "micro",
     "now-deploy": "npm test && now --npm && now alias"
   },
@@ -34,13 +34,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/telemark/micro-status-saksbehandling-skoleskyss.git"
+    "url": "https://github.com/telemark/micro-status-saksbehandling-skoleskyss.git"
   },
   "bugs": {
-    "url": "http://github.com/telemark/micro-status-saksbehandling-skoleskyss/issues"
+    "url": "https://github.com/telemark/micro-status-saksbehandling-skoleskyss/issues"
   },
   "now": {
-    "alias": "skoleskyss.saksbehandling.status.t-fk.win"
+    "alias": "skoleskyss.saksbehandling.status.t-fk.win",
+    "env": {
+      "NODE_ENV": "production"
+    }
   },
   "greenkeeper": {
     "emails": false
