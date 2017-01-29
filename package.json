@@ -1,7 +1,7 @@
 {
   "name": "micro-status-saksbehandling-skoleskyss",
   "description": "Shows status for saksbehandling skoleskyss",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "private": true,
   "author": {
@@ -22,7 +22,7 @@
     "standard-fix": "standard --fix",
     "start": "micro -p 8080",
     "dev": "micro",
-    "now-deploy": "npm test && now --npm && now alias"
+    "now-deploy": "npm test && now --npm --alias"
   },
   "keywords": [
     "microservice",
@@ -40,7 +40,9 @@
     "url": "https://github.com/telemark/micro-status-saksbehandling-skoleskyss/issues"
   },
   "now": {
-    "alias": "skoleskyss.saksbehandling.status.t-fk.win",
+    "aliases": [
+      "skoleskyss.saksbehandling.status.t-fk.win"
+    ],
     "env": {
       "NODE_ENV": "production"
     }
