@@ -1,7 +1,7 @@
 {
   "name": "micro-status-saksbehandling-skoleskyss",
   "description": "Shows status for saksbehandling skoleskyss",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "private": true,
   "author": {
@@ -47,14 +47,11 @@
       "NODE_ENV": "production"
     }
   },
-  "greenkeeper": {
-    "emails": false
-  },
   "devDependencies": {
     "coveralls": "2.11.15",
     "nsp": "2.6.2",
     "standard": "8.6.0",
-    "tap": "9.0.3"
+    "tap": "10.0.0"
   },
   "dependencies": {
     "got": "6.7.1",
